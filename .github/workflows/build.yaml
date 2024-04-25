@@ -2,5 +2,6 @@ on:  push
 jobs:
   first_job:
     runs-on: ubuntu-22.04
+    container: mcr.microsoft.com/dotnet/aspnet:6.0.28-focal-amd64
     steps:
         - run: dotnet --version
