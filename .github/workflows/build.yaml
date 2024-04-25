@@ -1,7 +1,17 @@
+name: continuous integration for node
+defaults:
+  run:
+    shell: car /etc/os-releases
 on:  push
 jobs:
-  first_job:
+  
+  node_job:
+    name: Node version
     runs-on: ubuntu-22.04
     container: node:18-alpine3.18
     steps:
         - run: node --version
+          name: Node version
+          
+        - run: npm --version
+          name: Npm version
