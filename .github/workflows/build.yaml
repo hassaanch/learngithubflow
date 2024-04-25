@@ -3,5 +3,4 @@ jobs:
   first_job:
     runs-on: ubuntu-22.04
     steps:
-        - run: npm --version
-        - run: node --version
+        - run: dotnet --version
