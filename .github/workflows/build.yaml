@@ -1,7 +1,4 @@
 name: continuous integration for node
-defaults:
-  run:
-    shell: car /etc/os-releases
 on:  push
 jobs:
   
@@ -12,6 +9,6 @@ jobs:
     steps:
         - run: node --version
           name: Node version
-          
+
         - run: npm --version
           name: Npm version
