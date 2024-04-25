@@ -1,5 +1,5 @@
 name: continuous integration for node
-on:  push
+on: push
 jobs:
   
   node_job:
@@ -12,3 +12,6 @@ jobs:
 
         - run: npm --version
           name: Npm version
+
+        - name: npm install
+          run: npm install
