@@ -12,6 +12,8 @@ jobs:
 
         - run: npm --version
           name: Npm version
-
+        
+        - uses: actions/checkout@v4
+        
         - name: npm install
           run: npm install
